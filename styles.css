@@ -91,13 +91,13 @@ h1, h2 {
 
 /* Add more background images as needed */
 body.background1 {
-    background-image: url('background1.jpg'); /* Default background image */
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fphotos%2Fpurple-red-blue%2F11&psig=AOvVaw1ex6arhh59b0OMFmGTZlPP&ust=1715150478146000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCRycn3-oUDFQAAAAAdAAAAABAR'); /* Default background image */
 }
 body.background2 {
-    background-image: url('background2.jpg');
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-ai-image%2Fabstract-silky-background-wallpaper-with-trendy-colors-ai-generated_49556586.htm&psig=AOvVaw1ex6arhh59b0OMFmGTZlPP&ust=1715150478146000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCRycn3-oUDFQAAAAAdAAAAABAh');
 }
 body.background3 {
-    background-image: url('background3.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxEPsyh7TiKK7m6FokRHb56On1eMWku2n9_UwQK_4mlfJN9Ns_eN2Y47eHVF6s1jR5IYQ&usqp=CAU');
 }
 
 

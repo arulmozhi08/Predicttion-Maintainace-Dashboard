@@ -1,32 +1,30 @@
-function redirectToAlerts(machine) {
-    window.location.href = `alerts.html?machine=${machine}`;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('background1.jpg'); /* Default background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.5s ease;
 }
 
-function goBack() {
-    window.history.back();
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const machineName = new URLSearchParams(window.location.search).get('machine');
-    document.getElementById('machineName').textContent = machineName;
+/* Add more background images as needed */
+.background2 {
+    background-image: url('background2.jpg');
+}
+.background3 {
+    background-image: url('background3.jpg');
+}
 
-    const alertsList = document.getElementById('alertsList');
-    const alerts = [
-        'High vibration detected',
-        'Low fluid level warning',
-        'Anomaly in pressure readings',
-        'Temperature exceeding threshold'
-    ];
-
-    alerts.forEach(alert => {
-        const listItem = document.createElement('li');
-        listItem.textContent = alert;
-        alertsList.appendChild(listItem);
-    });
-
-    const alertContainer = document.getElementById('alertContainer');
-    const alertMessage = document.createElement('div');
-    alertMessage.classList.add('alert-message');
-    alertMessage.textContent = `Alert for ${machineName}: High vibration detected`;
-    alertContainer.appendChild(alertMessage);
-});
+/* Rest of the CSS styles remain the same */

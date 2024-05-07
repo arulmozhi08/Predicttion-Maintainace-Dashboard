@@ -1,30 +1,12 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    background-image: url('background1.jpg'); /* Default background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-image 0.5s ease;
+document.addEventListener('DOMContentLoaded', function() {
+    const body = document.querySelector('body');
+    const randomBgClass = getRandomBackgroundClass();
+    body.classList.add(randomBgClass);
+});
+
+function getRandomBackgroundClass() {
+    const backgrounds = ['background1', 'background2', 'background3']; // Add more background classes if needed
+    const randomIndex = Math.floor(Math.random() * backgrounds.length);
+    return backgrounds[randomIndex];
 }
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-/* Add more background images as needed */
-.background2 {
-    background-image: url('background2.jpg');
-}
-.background3 {
-    background-image: url('background3.jpg');
-}
-
-/* Rest of the CSS styles remain the same */
